@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Locations</title>
+		<link rel="stylesheet" href="style.css"/>
+		<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+		<style>
+			body{
+				background-image: url("images/locations.jpg");
+				background-size: cover;
+				background-repeat: no-repeat;
+			}
+		</style>
+	</head>
+	<body>
+        <header>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="menu.html">Menu</a></li>
+					<li><a href="locations.html" class="active">Locations</a></li>
+					<li><a href="aboutus.html">About Us</a></li>
+					<li><a href="contactus.html">Contact Us</a></li>
+				</ul>
+			</nav>
+        </header>
+        <section>
+            <header id="map-text">
+                <h1 align="center">Our Locations</h1>
+            <h2 align="center">We are open in these locations</h2>
+            </header>
+        </section>
+        <div id="map"> 
+        <script language="javascript">
+        	function myMap() {
+    			var mapOptions = {
+        			center: new google.maps.LatLng(-1.396803, 36.755645),
+        			zoom: 15,
+        			mapTypeId: google.maps.MapTypeId.HYBRID
+        		}
+				var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+			}
+        </script>
+           
+        <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+        </div>
+        <article class="locations">
+            <p>Pizza Inn-Galleria<br>
+				Nairobi<br>
+				0700 323323
+			</p>
+            <p>Pizza Inn-Rongai<br>
+				Nairobi<br>
+				0729 867378
+			</p>
+        </article>
+		<footer>
+			<div class="copyright">
+				<p align="center">&copy; 2017 Eugene Ngoya <br> Images from <a href="https://unsplash.com/">Unsplash</a></p>
+			</div>
+		</footer>
+	</body>
+</html>
